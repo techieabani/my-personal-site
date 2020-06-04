@@ -1,0 +1,16 @@
+<html>
+<body>
+<script type="text/javascript">
+var a = 100;
+function test(){
+var a = 10;
+console.log(this.a);
+setTimeout(function(){
+console.log(this.a)
+},100);
+};
+var a  = new test(); 
+
+</script>
+</body>
+</html>
